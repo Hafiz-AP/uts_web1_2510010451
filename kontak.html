@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Ruang Kopi Hafiz | Muhammad Hafiz Ansyari Persada</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ruang Kopi Hafiz</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="kontak-main">
+    <h1>Hubungi Ruang Kopi Hafiz</h1>
+    <p>Silakan kirim pesan, reservasi tempat, atau lihat daftar paket layanan kami di bawah ini.</p>
+
+    <!-- Form Kontak -->
+    <section class="form-section">
+      <form action="#" method="get" class="form-kontak">
+        <fieldset>
+          <legend>Formulir Pesan &amp; Reservasi</legend>
+
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subjek">Subjek</label>
+            <select id="subjek" name="subjek">
+              <option value="pemesanan">Pemesanan Menu / Biji Kopi</option>
+              <option value="reservasi">Reservasi Meja Kerja / Diskusi</option>
+              <option value="kerjasama">Kerja Sama / Pertanyaan Umum</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan atau jadwal kunjungan Anda..."></textarea>
+          </div>
+
+          <div class="form-aksi">
+            <button type="submit" class="btn-kirim">Kirim Pesan</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Tabel Daftar Layanan/Paket (minimal 4 baris + colspan/rowspan) -->
+    <section class="tabel-section">
+      <h2>Daftar Layanan &amp; Paket</h2>
+      <div class="tabel-wrapper">
+        <table>
+          <caption>Tabel Paket Menu dan Ruang Kerja Ruang Kopi Hafiz</caption>
+          <thead>
+            <tr>
+              <th>Layanan / Paket</th>
+              <th>Keterangan</th>
+              <th>Harga</th>
+              <th>Durasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket Ngopi Santai</td>
+              <td>1 Minuman Kopi + 1 Camilan</td>
+              <td>Rp35.000</td>
+              <td rowspan="2">Fleksibel (Dine-in / Takeaway)</td>
+            </tr>
+            <tr>
+              <td>Paket Produktif Siang</td>
+              <td>1 Minuman + 1 Pastry</td>
+              <td>Rp38.000</td>
+            </tr>
+            <tr>
+              <td>Meja Kerja Harian</td>
+              <td>Akses meja + colokan listrik</td>
+              <td>Rp35.000</td>
+              <td>Hingga 6 jam</td>
+            </tr>
+            <tr>
+              <td>Ruang Diskusi Kelompok</td>
+              <td>Meja kelompok (maks. 6 orang)</td>
+              <td>Rp120.000</td>
+              <td>3 jam</td>
+            </tr>
+            <tr>
+              <td colspan="2">Promo Pelajar / Mahasiswa (Tunjukkan KTM)</td>
+              <td>Diskon 15%</td>
+              <td>Setiap hari kerja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Lokasi -->
+    <section class="lokasi-section">
+      <h2>Lokasi Kami</h2>
+      <figure class="lokasi-box">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=114.8250%2C-3.4550%2C114.8450%2C-3.4400&amp;layer=mapnik"
+          title="Peta Lokasi Banjarbaru"
+          loading="lazy"></iframe>
+        <figcaption>Area Banjarbaru, Kalimantan Selatan</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ruang Kopi Hafiz | Muhammad Hafiz Ansyari Persada - 2510010451 - 3A Non Reguler Banjarbaru</p>
+  </footer>
+</body>
+</html>
